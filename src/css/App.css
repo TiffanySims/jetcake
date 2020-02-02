@@ -1,0 +1,387 @@
+@import url(reset.css);
+
+/* Headings */
+body {
+  overflow-x: hidden;
+}
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+h2 {
+  font-size: 150%;
+  word-spacing: 2px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #5360bb;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  color: #5360bb;
+  padding: 15px;
+  border-bottom: 1px solid #0000004a;
+}
+
+/* Navbar */
+
+.nav_links li {
+  display: inline-block;
+
+  margin-left: 25px;
+  list-style: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+.nav_links a {
+  color: #5360bb;
+}
+
+.nav_links li:hover {
+  border-bottom: 2px solid #4251bd;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)),
+    url("../Homepage/hero.jpg");
+
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+/* Hero Section */
+
+.hero_text {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 300;
+}
+.hero_text h1 {
+  margin-bottom: 10px;
+  font-size: 220%;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* Signup/Signin Forms */
+
+.signup,
+.signin {
+  width: 40%;
+  background-color: whitesmoke;
+  margin: 50px auto;
+  padding: 20px;
+}
+.signup_h1,
+.signin_h1 {
+  text-align: center;
+  font-size: 120%;
+  font-weight: 400;
+  color: #5360bb;
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+label {
+  font-weight: 300;
+}
+input {
+  margin: 20px 0;
+  padding: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #5360bb;
+}
+select {
+  margin-top: 20px;
+  padding: 5px;
+}
+.short_input {
+  width: 30%;
+}
+.signin_button,
+.signup_button {
+  text-align: right;
+}
+.signup_btn,
+.signin_btn,
+.edit_btn {
+  padding: 5px 15px;
+  color: #5360bb;
+  cursor: pointer;
+  border: 1px solid #4250b3;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+.edit_button {
+  text-align: center;
+}
+.error {
+  color: red;
+  text-align: center;
+  font-size: 85%;
+}
+
+/* Info Section */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.long_copy {
+  line-height: 140%;
+  width: 70%;
+  margin-left: 15%;
+}
+.section_features .long-copy {
+  margin-bottom: 30px;
+}
+.section_features {
+  padding: 80px 0px;
+  color: #555;
+  font-weight: 300;
+}
+
+.box {
+  padding: 20px;
+}
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+.box ion-icon {
+  font-size: 200%;
+  display: block;
+  color: #5360bb;
+  margin-bottom: 10px;
+}
+
+/*Profile*/
+
+img {
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.profile_page {
+  padding: 20px;
+  color: #555;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.profile_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.profile_h1 {
+  font-size: 180%;
+  font-weight: 300;
+  color: #5360bb;
+}
+.profile p {
+  margin-bottom: 10px;
+}
+.profile span {
+  font-weight: 300;
+}
+.signout_btn {
+  border: none;
+  background-color: #fff;
+  padding: 3px 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  font-size: 80%;
+}
+.signout_button {
+  text-align: right;
+}
+
+.update_button {
+  text-align: right;
+}
+
+.save_button {
+  text-align: center;
+  padding: 20px;
+}
+
+.switch {
+  padding: 5px;
+  font-size: 70%;
+  text-align: center;
+}
+
+.switch a {
+  font-size: 90%;
+}
+
+/*Footer */
+
+*:focus {
+  outline: none;
+}
+footer {
+  background-color: #333;
+  padding: 30px;
+  font-size: 80%;
+}
+.footer_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_nav {
+  float: left;
+  list-style: none;
+}
+.social_links {
+  list-style: none;
+  float: right;
+}
+
+.footer_nav li,
+.social_links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer_nav li:last-child,
+.social_links li:last-child {
+  margin-right: 0;
+}
+
+.footer_nav li a:link,
+.footer_nav li a:visited,
+.social_links li a:visited,
+.social_links li a:link {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.footer_nav li a:hover,
+.footer_nav li a:active {
+  color: #ddd;
+}
+footer p {
+  color: #888;
+  text-align: center;
+  font-size: 90%;
+  margin-top: 30px;
+}
+.social_links li a:link,
+.social_links li a:visited {
+  font-size: 160%;
+}
+.logo-facebook ion-icon:hover {
+  color: #3b5998;
+}
+.logo-twitter ion-icon:hover {
+  color: #00aced;
+}
+.logo-youtube ion-icon:hover {
+  color: #dd4b39;
+}
+.logo-snapchat ion-icon:hover {
+  color: rgb(250, 250, 15);
+}
+
+.logo-facebook ion-icon,
+.logo-snapchat ion-icon,
+.logo-youtube ion-icon,
+.logo-twitter ion-icon {
+  transition: color 0.2s;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    font-size: 70%;
+  }
+  .signin,
+  .signup {
+    width: 75%;
+    margin: 30px auto;
+  }
+  .nav_links li {
+    margin-left: 20px;
+  }
+  .hero_text h1 {
+    font-size: 160%;
+  }
+  .hero_text p {
+    font-size: 90%;
+    text-align: center;
+  }
+
+  .profile {
+    display: block;
+    padding: 20px;
+  }
+  .profile_h1 {
+    font-size: 120%;
+  }
+  .profile p {
+    margin-bottom: 15px;
+  }
+  .long_copy {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .flex {
+    display: block;
+    padding: 10px;
+  }
+  .hero_text p {
+    padding: 15px;
+  }
+  .short_input {
+    width: 50%;
+  }
+}
