@@ -130,7 +130,6 @@ input {
 }
 input[type="text"],
 input[type="email"],
-input[type="date"],
 input[type="password"] {
   border: none;
   border-bottom: 1px solid #5360bb;
@@ -206,13 +205,13 @@ img {
 }
 
 .profile_page {
-  padding: 20px;
+  padding: 40px;
   color: #555;
 }
 .profile {
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding-top: 40px;
 }
 .profile_header {
   display: flex;

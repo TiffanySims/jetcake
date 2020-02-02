@@ -3,7 +3,7 @@ import React from "react";
 export default function Info() {
   return (
     <div className="section_features">
-      <div clasName="container">
+      <div className="container">
         <h2> Become the person &mdash; you know</h2>
         <p className="long_copy">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
@@ -27,7 +27,7 @@ export default function Info() {
 
         <div className="box">
           <ion-icon name="time"></ion-icon>
-          <h3>Get Fit On Your Time</h3>
+          <h3>Fit On Your Time</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
             quasi nam temporibus enim saepe rerum, vel quia cum sequi doloribus

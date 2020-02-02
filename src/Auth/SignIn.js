@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Redirect, Link } from "react-router-dom";
 import firebase from "../config";
 import Navbar from "../Homepage/Navbar";
+import Footer from "../Homepage/Footer";
 
 export default class SignIn extends Component {
   state = {
@@ -66,6 +67,7 @@ export default class SignIn extends Component {
             </div>
           </form>
         </div>
+        <Footer />
       </div>
     );
   }

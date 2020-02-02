@@ -4,7 +4,6 @@ import "./css/App.css";
 import SignUp from "./Auth/SignUp";
 import SignIn from "./Auth/SignIn";
 import Profile from "./Profile/Profile";
-import Footer from "./Homepage/Footer";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
@@ -18,7 +17,6 @@ function App() {
           <Route path="/signin" component={SignIn} />
           <Route path="/profile" component={Profile} />
         </Switch>
-        <Footer />
       </BrowserRouter>
     </div>
   );

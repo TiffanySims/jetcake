@@ -3,6 +3,7 @@ import firebase from "../config";
 import { firestore } from "firebase";
 import { Redirect, Link } from "react-router-dom";
 import Navbar from "../Homepage/Navbar";
+import Footer from "../Homepage/Footer";
 
 export default class SignUp extends Component {
   state = {
@@ -178,6 +179,7 @@ export default class SignUp extends Component {
 
             <label>Date of Birth:</label>
             <input
+              className="short_input"
               type="date"
               name="dob"
               required
@@ -286,6 +288,7 @@ export default class SignUp extends Component {
             </div>
           </form>
         </div>
+        <Footer />
       </div>
     );
   }

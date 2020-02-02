@@ -49,7 +49,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div class="container">
+      <div className="container">
         <p>Copyright &copy; 2020 by HealthWize. All rights reserved.</p>
       </div>
     </footer>
